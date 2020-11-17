@@ -1,0 +1,26 @@
+/*Victor Welters 1 ITF 1 r0784055*/
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+div, p.biglink, li.apart{
+    width: 400px;
+    padding: 21px;
+    margin-bottom: 21px;
+    background-color: #66999c;
+}
+
+div:hover ,p.biglink:hover, li.apart:hover{
+    color: white;
+    background-color: darkcyan;
+    box-shadow: 3px 3px #666;
+}
+
+
+.center{
+    text-align: center;
+}

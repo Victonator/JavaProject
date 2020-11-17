@@ -1,0 +1,36 @@
+<!--Victor Welters 1 ITF 1 r0784055-->
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="img/style.css" />
+    <title>Registratie Personeel</title>
+</head>
+<body>
+<h1>Nieuw Personeelslid</h1>
+<form action="4_welkomPersoneel" >
+    <div class="center">
+    <p>
+        <label for="voornaam">Voornaam </label>
+        <input type="text" name="voornaam" id="voornaam">
+    </p>
+    <p>
+        <label for="familienaam">Familienaam </label>
+        <input type="text" name="familienaam" id="familienaam">
+    </p>
+    <p>
+        <label for="dienst">In dienst sinds (dd/MM/yyyy) </label>
+        <input type="text" name="dienst" id="dienst">
+    </p>
+        <p>
+            <label for="wedde">Wedde </label>
+            <input type="text" name="wedde" id="wedde">
+        </p>
+    </div>
+    <p class="center biglink">
+        <input type="submit" name="Registreer" value="Registreer personeelslid">
+    </p>
+</form>
+<a href="index"><p class="biglink center">Terug naar de startpagina</p></a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!--Victor Welters 1 ITF 1 r0784055-->
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="img/style.css" />
+    <title>Overzicht Supermarkten</title>
+</head>
+<body>
+<h1>Dit zijn de supermarkten:</h1>
+    <ul>
+        <li th:each="supermarkten : ${supermarkten}">
+            <a th:href="@{/10_overzichtAfdelingen(supermarkt=${supermarktenStat.index})}"/>
+            <p th:text="${supermarkten.getNaam()}" class="biglink"/>
+        </li>
+    </ul>
+<a href="/"><p class="biglink center">Terug naar de beginpagina</p></a>
+</body>
+</html>

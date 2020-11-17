@@ -1,0 +1,24 @@
+<!--Victor Welters 1 ITF 1 r0784055-->
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="img/style.css" />
+    <title>Overzicht Afdeling</title>
+</head>
+<body>
+<h1 th:text="'Dit zijn de afdelingen van supermarkt '+${supermarkt.getNaam()}"/>
+<div>
+    <ol>
+        <li th:each="afdelingen : ${afdelingen}">
+            <span th:text="${afdelingen.getNaam()} +' - '"/>
+            <span th:if="${afdelingen.isGekoeld() == true}">Gekoelde afdeling</span>
+            <span th:unless="${afdelingen.isGekoeld() == true}">Geen koeling</span>
+            <p th:text="'Verantwoordelijke: '+${afdelingen.getVerantwoordelijke().getVoornaam() +' '+ afdelingen.getVerantwoordelijke().getFamilienaam()}"></p>
+            <img onerror="this.src='img/error.svg'" th:src="${afdelingen.getFoto()}" width="200" height="auto">
+        </li>
+    </ol>
+</div>
+<p><a href="/">Terug naar de beginpagina</a></p>
+</body>
+</html>

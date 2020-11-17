@@ -1,0 +1,25 @@
+<!--Victor Welters 1 ITF 1 r0784055-->
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="img/style.css" />
+    <title>Overzicht klanten</title>
+</head>
+<body>
+<h1>Dit zijn onze klanten:</h1>
+    <ol>
+        <li th:each="klanten : ${klanten}" class="apart">
+            <span th:text="${klanten.getVoornaam()} +' '+ ${klanten.getFamilienaam()}"/>
+            <ul>
+                <li th:text="'geboortejaar: '+${klanten.getGeboortejaar()}"/>
+                <li th:text="'klantenkaartnr: '+${klanten.getKlantenkaartnr()}"/>
+                <ul>
+                    <li th:each="boodschppenlijst : ${klanten.getBoodschappenlijst()}">
+                    <span th:text="${boodschppenlijst}"/>
+                </ul>
+            </ul>
+        </li>
+<p><a href="/">Terug naar de beginpagina</a></p>
+</body>
+</html>

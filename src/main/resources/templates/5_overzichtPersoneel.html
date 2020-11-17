@@ -1,0 +1,17 @@
+<!--Victor Welters 1 ITF 1 r0784055-->
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="img/style.css" />
+    <title>Overzicht Personeel</title>
+</head>
+<body>
+<h1>Dit zijn de personeelsleden:</h1>
+    <ul>
+        <li th:each="personeelsleden : ${personeelsleden}"
+            th:text="${personeelsleden.toString()}" class="apart"/>
+    </ul>
+<a href="/"><p class="biglink center">Terug naar de beginpagina</p></a>
+</body>
+</html>

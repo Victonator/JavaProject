@@ -1,0 +1,43 @@
+<!--Victor Welters 1 ITF 1 r0784055-->
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="img/style.css" />
+    <title>Registratie Klant</title>
+</head>
+<body>
+<h1>Nieuwe klant</h1>
+<form action="2_welkomKlant" >
+    <div class="center">
+        <label for="voornaam">Voornaam </label>
+        <input type="text" name="voornaam" id="voornaam">
+
+
+    <p>
+        <label for="familienaam">Familienaam </label>
+        <input type="text" name="familienaam" id="familienaam">
+    </p>
+
+    <p>
+        <label for="geboortejaar">Geboortejaar </label>
+        <input type="text" name="geboortejaar" id="geboortejaar">
+    </p>
+    </div>
+    <div class="center">
+    <p th:each="supermarkten : ${supermarkten}">
+        <input type="radio" name="supermarkt" th:value="${supermarktenStat.index}"
+               th:id="${supermarktenStat.index}" th:checked="${supermarktenStat.index}==0"/>
+        <label th:for="${supermarktenStat.index}" th:text="${supermarkten.getNaam()}"/>
+    </p>
+    </div>
+
+    <p class="biglink center">
+        <input type="submit" name="Registreer" value="Ga door als klant met aanmaak klantenkaartnr">
+    </p>
+
+
+</form>
+<a href="index"><p class="biglink center">Terug naar de startpagina</p></a>
+</body>
+</html>
