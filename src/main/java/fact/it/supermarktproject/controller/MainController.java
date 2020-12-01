@@ -172,7 +172,7 @@ public class MainController {
         return val;
     }
 
-    //maak aan in begin van programma
+    //Maak aan in begin van programma
     @PostConstruct
     public void opvullen() {
         personeelsleden = vulPersoneelsledenLijst();
