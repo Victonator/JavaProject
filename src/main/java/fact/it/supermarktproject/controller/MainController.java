@@ -137,7 +137,7 @@ public class MainController {
                 return "99_errorPagina";
             }
             else {
-                //maak nieuwe afdeling
+                //Maak nieuwe afdeling
                 boolean afdelingGekoeld = false;
                 if(afdelingGekoeldString!=null){
                    afdelingGekoeld = true;
