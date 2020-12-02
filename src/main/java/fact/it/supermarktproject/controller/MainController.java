@@ -19,7 +19,6 @@ public class MainController {
     private ArrayList<Personeelslid> personeelsleden;
     private ArrayList<Klant> klanten;
     private ArrayList<Supermarkt> supermarkten;
-    private int klantenNr;
 
     @RequestMapping("/12_overzichtWedde")
     public String overzichtWedde(Model model) {
