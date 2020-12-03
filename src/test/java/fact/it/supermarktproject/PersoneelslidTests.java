@@ -41,7 +41,7 @@ public class PersoneelslidTests {
         Personeelslid donald = new Personeelslid("Donald", "Duck");
         donald.setInDienstSinds(LocalDate.of(1999,2,25));
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd MMM yyyy");
-        assertEquals("Personeelslid DUCK Donld is in dienst sinds " + donald.getInDienstSinds().format(dtf) , donald.toString());
+        assertEquals("Personeelslid DUCK Donald is in dienst sinds " + donald.getInDienstSinds().format(dtf) , donald.toString());
     }
 
 }
