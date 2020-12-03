@@ -1,4 +1,4 @@
-//Victor Welters 1ITF1 r0784055
+//Victor Welters 1 ITF 1 r0784055
 package fact.it.supermarktproject.controller;
 import fact.it.supermarktproject.model.Afdeling;
 import fact.it.supermarktproject.model.Klant;
