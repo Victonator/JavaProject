@@ -39,7 +39,8 @@ public class Klant extends Persoon{
     }
 
     public String toString(){
-        return "Klant "+super.toString()+" met klantenkaartnr "+getKlantenkaartnr();
+        return "klant";
+//        return "Klant "+super.toString()+" met klantenkaartnr "+getKlantenkaartnr();
     }
 }
 
